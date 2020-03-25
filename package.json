@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "ajay kumar's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir public"
+  },
+  "keywords": [
+    "ajay",
+    "tezpur",
+    "university",
+    "computer",
+    "science"
+  ],
+  "author": "ajay kumar",
+  "license": "ISC",
+  "dependencies": {
+    "jquery-ui-dist": "^1.12.1",
+    "navbar": "^2.1.0",
+    "navbar.js": "^1.0.7",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {
+    "jquery": "^3.4.1",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  }
+}

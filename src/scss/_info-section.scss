@@ -1,0 +1,40 @@
+.info-section{
+    padding: 40px;
+    width:20%;
+    position: absolute;
+    top:20px;
+    bottom: 0;
+    
+    .icon-section{
+        a{
+            color:white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 0 10px;
+            &:first-child{
+                padding: 0 10px 0 0;
+            }
+            &:hover{
+                border: 2px solid white;
+                border-radius: 10px;
+                
+            }
+        }
+    }
+    .info-box{
+        left: 20px;
+        position: absolute;
+        bottom: 10px;
+        h4{
+            font-size: 1.3rem;
+            color: #fefefe;
+            margin:.5rem;
+            font-weight: 500;
+        }
+        p{
+            color:#fefefe;
+            font-size: .9rem;
+            font-weight: 300;
+        }
+    }
+}

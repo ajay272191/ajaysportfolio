@@ -1,0 +1,271 @@
+
+.home{
+    .menu-icon{
+        position: fixed;
+        right: 36px;
+        top:45px;
+        padding:0px;
+        z-index: 10;
+        .fa{
+            font-size: 2rem;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .menu{
+        display: none;
+    }
+    .info-section{
+        padding: 40px;
+        width:35%;
+        position: absolute;
+        top:20px;
+        bottom: 0;
+        .logo{
+            border: 5px solid #ffffff;
+            height: 60px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: 4rem;
+            color: #ebeae7;
+            line-height: 2;
+            border-radius: 4px;
+            font-size: 25px;
+            font-weight: 600;        
+        }
+    }
+    .content-area{
+        background: #ebeae7;
+        margin-left: 35%;
+        width: 65%;
+        height: 100%;
+        .img-container{
+            display:inline-block;
+            width: 30%;
+            position: relative;
+            height: 100%;
+            .user-img{
+                position: absolute;
+                top:5%;
+                z-index: 2;
+                left:-170px;
+                img{
+                    width: 100%;
+                    height:29%;
+                }
+                -webkit-box-shadow:9px 0px 24px 6px rgba(0,0,0,0.34);
+                -moz-box-shadow:9px 0px 24px 6px rgba(0,0,0,0.34);
+                box-shadow: 9px 0px 24px 6px rgba(0,0,0,0.34); 
+                /*
+                background: url("/img/ajay.jpg") no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                */
+                
+            }
+        }
+        .profile-section{
+            vertical-align: top;
+            display: inline-block;
+            max-width: 500px;
+            position: absolute;
+            .profile{
+                padding: 20%;
+                h1{
+                    font-size: 2rem;
+                    font-weight:550;
+                    line-height: 1.2rem;
+                    margin:0 0 1.4rem;
+                    
+                }
+                
+                h5{
+                    font-size: 1.1rem;
+                    margin:0 0 2rem;
+                }
+                p{
+                    color: #8b8484;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem 0;
+                }
+                .primary-btn{
+                    display: inline-block;
+                    background:blue ;
+                    border: 1px solid #ebeae7 ;
+                    -webkit-border-radius:30px;
+                    -moz-border-radius: 30px;
+                    border-radius: 30px;
+                    text-align: center;
+                    color: #ebeae7;
+                    padding: 10px 25px;
+                    text-transform: uppercase;
+                    letter-spacing: 0px;
+                    margin-right: 0px;
+                    text-decoration: none;
+                    &:hover{
+                        color: blue;
+                        border: 2px solid blue;
+                        background: white;
+                    }
+                }
+                .resume-btn{
+                    display: inline-block;
+                    background:#ebeae7 ;
+                    border: 2px solid blue;
+                    -webkit-border-radius:30px;
+                    -moz-border-radius: 30px;
+                    border-radius: 30px;
+                    text-align: center;
+                    color: blue;
+                    padding: 7px 25px;
+                    text-transform: uppercase;
+                    letter-spacing: 0px;
+                    margin-right: 5px;
+                    text-decoration: none;
+                    &:hover{
+                        color: #ebeae7;
+                        border: 2px blue;
+                        background: blue;
+                    }
+                }
+            }
+
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media(max-width: 767px){
+    .home{
+        .menu-icon{
+            top: 5px;
+            right: 10px;
+        }
+        .info-section{  
+            left: 10px;
+            padding: 0;         
+            top:5px;
+            .logo{    
+                height: 40px;
+                border: 4px solid #ffffff;
+                font-size: .9rem;
+                width: 70px;
+            }
+            .icon-section{
+                a{
+                    color:#857171;
+                }
+            }
+            .info-box{
+                left: 0px;
+                bottom: 5px;
+                h4{
+                    color: black;
+                }
+                p{
+                    color:#857171;
+                }
+            }
+        }
+        .content-area{
+            margin-top: 50px;
+            .img-container{
+                .user-img{
+                    top:5%;
+                    left:-105px;
+                    img{
+                        width:100%;
+                        height:25%;
+                    }
+                }
+            }
+            .profile-section{
+                padding: 0rem;
+                .profile{
+                    h1{
+                        font-size: 1rem;
+                        font-weight:600;
+                          
+                    }
+                    h5{
+                        font-size: 1rem;
+                    }
+                    p{
+                        color: #8b8484;
+                        font-weight: 300;
+                        font-size: .7rem;
+                    }
+                    .primary-btn{
+                        padding: 5px 15px;
+                        font-size: .7rem;
+                        margin-bottom: 5px;
+                    }
+                    .resume-btn{
+                        padding: 5px 15px;
+                        font-size: .7rem;
+                    }
+                }
+            }
+
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .home{
+        .menu-icon{
+            top: 20px;
+            right: 20px;
+        }
+        .content-area{
+            width: 100%;
+            .img-container{
+                .user-img{
+                    width: 100%;
+                }
+            }
+        }
+        .info-section{
+            padding: 0px;
+            left: 20px;
+            .logo{
+                height: 40px;
+                border: 4px solid #ffffff;
+                font-size: 1rem;
+                width: 70px;
+            }
+            .info-box{
+                left: 20px;
+                position: absolute;
+                bottom: 5px;
+                
+            }
+        }
+        
+    }
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .home{
+      
+        .info-section{
+            padding: 0px;
+            left: 20px;
+           
+            .info-box{
+                left: 20px;
+                position: absolute;
+                bottom: 5px;
+            }
+        }
+        
+    }
+    
+}

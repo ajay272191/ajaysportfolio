@@ -1,0 +1,288 @@
+.contact{
+    .menu-icon{
+        position: fixed;
+        right: 36px;
+        top:45px;
+        padding:0px;
+        z-index: 10;
+        .fa{
+            font-size: 2rem;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .menu{
+        display: none;
+    }
+    .info-section{
+        padding: 40px;
+        width:35%;
+        position: absolute;
+        top:20px;
+        bottom: 0;
+        .logo{
+            margin-top: 20px;
+            margin-left: 20px;
+            border: 5px solid #ffffff;
+            height: 60px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: 4rem;
+            color: #ebeae7;
+            line-height: 2;
+            border-radius: 4px;
+            font-size: 25px;
+            font-weight: 600;        
+        }
+    }
+    .contact-area{
+        background: #ebeae7;
+        margin-left: 35%;
+        width: 65%;
+        height: 100%;
+        .message-container{
+            display:inline-block;
+            width: 25%;
+            position: relative;
+            height: 100%;
+            .message-section{
+                position: absolute;
+                top:10%;
+                z-index: 2;
+                left:-200px;
+                -webkit-box-shadow:9px 0px 24px 6px rgba(0,0,0,0.34);
+                -moz-box-shadow:9px 0px 24px 6px rgba(0,0,0,0.34);
+                box-shadow: 9px 0px 24px 6px rgba(0,0,0,0.34); 
+                /*
+                background: url("/img/ajay.jpg") no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                */
+                background-color: #272727;
+                padding: 30px;
+                color:#fefefe;
+                input[type="text"],input[type="email"],textarea{
+                    background: transparent;
+                    border: none;
+                    border-bottom: 2px solid #bdbdbd;
+                    width: 100%;
+                    margin-bottom: 2rem;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    color:#bdbdbd;
+                }
+                h4{
+                    color:#bdbdbd;
+                    margin-top: 2rem;
+                    font-size: 1.2rem;
+                    margin-bottom: 2rem;
+                }
+                button[type="submit"]{
+                    background: blue;
+                    -webkit-border-redius:30px;
+                    -moz-border-redius:30px;
+                    border-radius: 30px;
+                    text-align: center;
+                    color: #fefefe;
+                    padding: 12px 30px;
+                    text-transform: uppercase;
+                    width: 100%;
+                    border: none;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .profile-section{
+            vertical-align: top;
+            display: inline-block;
+            max-width: 500px;
+            position: absolute;
+            margin: auto;
+            .profile{
+                display: grid;
+                grid-row-gap: 20px;
+                padding: 20%;
+                .contact-box{
+                    cursor: pointer;
+                    transition: all 0.5, ease-in-out;
+                    &:hover{
+                        -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.71);
+                        -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.71);
+                        box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.71);
+                    }
+                }
+                h3{
+                    font-size: 1.3rem;
+                    margin:0 0 2rem;
+                    color: blue;
+                }
+                p{
+                    color: #8b8484;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem 0;
+                }
+               
+            }
+
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media(max-width: 767px){
+    .contact{
+        .menu-icon{
+            top: 5px;
+            right: 10px;
+        }
+        .info-section{  
+            left: 10px;
+            padding: 0;         
+            top:5px;
+            .logo{    
+                height: 40px;
+                border: 4px solid #ffffff;
+                font-size: .9rem;
+                width: 70px;
+            }
+            .icon-section{
+                a{
+                    color:#857171;
+                }
+            }
+            .info-box{
+                left: 0px;
+                bottom: 5px;
+                h4{
+                    color: black;
+                }
+                p{
+                    color:#857171;
+                }
+            }
+        }
+        .contact-area{
+            .message-container{
+                .message-section{
+                    top:9%;
+                    left:-130px;
+                    input[type="text"],input[type="email"],textarea{
+                        margin-bottom: 1rem;
+                        font-size: .8rem;
+                        line-height: 1;
+                    }
+                    h4{
+                        margin-top: 1rem;
+                        font-size: .8rem;
+                        margin-bottom:1rem;
+                    }
+                    button[type="submit"]{
+                        padding: 5px 30px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .profile-section{
+                
+                max-width: 250px;
+                position: absolute;
+                margin-top:12%;
+                .profile{
+                    float: right;
+                    padding: 15%;
+                    margin-left: 60px;
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        font-weight: 200;
+                        line-height: 1.4;
+                        font-size: .8rem;
+                    }
+                   
+                }
+    
+            }
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact{
+        .info-section{  
+            left: 10px;
+            padding: 0;         
+            top:5px;
+        }
+        .contact-area{
+            .message-container{
+                .message-section{
+                    top:9%;
+                    left:-145px;
+                    input[type="text"],input[type="email"],textarea{
+                        margin-bottom: 1.2rem;
+                        font-size: 1rem;
+                        line-height: 1.2;
+                    }
+                    h4{
+                        margin-top: 1.2rem;
+                        font-size: 1rem;
+                        margin-bottom:1.2rem;
+                    }
+                    button[type="submit"]{
+                        padding: 10px 30px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .profile-section{
+                margin-top:12%;
+            }
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .contact{
+        .info-section{
+            padding: 0;
+            .logo{
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+        }
+        .contact-area{
+            .message-container{
+                .message-section{
+                    top:9%;
+                    left:-145px;
+                    input[type="text"],input[type="email"],textarea{
+                        margin-bottom: 1.2rem;
+                        font-size: 1rem;
+                        line-height: 1.2;
+                    }
+                    h4{
+                        margin-top: 1.2rem;
+                        font-size: 1rem;
+                        margin-bottom:1.2rem;
+                    }
+                    button[type="submit"]{
+                        padding: 10px 30px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .profile-section{
+                margin-top:12%;
+            }
+        }
+    }
+    
+}
