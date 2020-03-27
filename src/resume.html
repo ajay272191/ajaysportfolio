@@ -7,23 +7,7 @@
     <script type="text/javascript" src="./js/index.js"></script>
     <link rel="stylesheet" href="./scss/main.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        var count=false;
-        var navv=()=>{
 
-            if(!count){
-            document.body.classList.add("menu-active");
-            console.log(document.body.classList);
-            count=true;
-            console.log(count);
-            }else{
-                document.body.classList.remove("menu-active");
-                console.log(document.body.classList);
-                count=false;
-                console.log(count);
-            }
-        }
-    </script>
 </head>
 <body class="resume">
     <section class="menu">
@@ -35,7 +19,7 @@
         </nav>
     </section>
 
-    <div class="menu-icon" onclick="navv()">
+    <div class="menu-icon" >
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
 
@@ -112,6 +96,27 @@
             </div>
        </div>
     </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
 
+    </script>
+    <script>
+      var count=false;
+      //console.log('icp');
+      $(document).ready(function(){
+        $('.menu-icon').click(function() {
+          if(!count){
+          document.body.classList.add("menu-active");
+          //console.log(document.body.classList);
+          count=true;
+        //  console.log(count);
+          }else{
+              document.body.classList.remove("menu-active");
+            //  console.log(document.body.classList);
+              count=false;
+            //  console.log(count);
+          }
+        });
+      });
+    </script>
 </body>
 </html>
