@@ -19,7 +19,7 @@
     }
     .info-section{
         padding: 40px;
-        width:35%;
+        width:25%;
         position: absolute;
         top:20px;
         bottom: 0;
@@ -45,6 +45,7 @@
         width: 80%;
         height: 100vh;
         overflow-x: hidden;
+        z-index: 2;
         .scroll-section{
             overflow-y: scroll;
             overflow-x: hidden;
