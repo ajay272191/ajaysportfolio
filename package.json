@@ -23,7 +23,7 @@
     "node-sass": "^4.13.1"
   },
   "devDependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.3"
   }
